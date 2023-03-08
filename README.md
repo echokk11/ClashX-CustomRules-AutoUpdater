@@ -37,4 +37,7 @@ nohup java -jar ClashX-CustomRules-AutoUpdater-0.0.1-SNAPSHOT.jar > /dev/null 2>
 如果你开启clashX的通知，监测到文件的变动一般会弹窗提示点击重载，如果没有，可以手动点击重载    
 配置->重载配置文件    
 
-可以做成mac的`自动操作`在电脑启动时候自动启动
+可以做成mac的`自动操作`在电脑启动时候自动启动    
+新建->应用程序->运行shell脚本    
+然后加入到mac系统    
+设置->通用->登录项->添加到登录时打开
