@@ -17,7 +17,7 @@ public class AutoUpdater {
     @Value("${clashx.custom}")
     public String custom;
 
-    private static final long SLEEP = 5L;
+    private static final long SLEEP = 15L;
     private long mainLastModified;
     private long customLastModified;
 
