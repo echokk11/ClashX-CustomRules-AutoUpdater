@@ -32,3 +32,4 @@ clashx:
 mvn clean package
 java -jar ClashX-CustomRules-AutoUpdater-0.0.1-SNAPSHOT.jar
 ```
+可以做成mac的`自动操作`在电脑启动时候自动启动
