@@ -22,21 +22,26 @@ public class AutoUpdater {
     private long customLastModified;
 
     @PostConstruct
-    public void onload() throws InterruptedException {
-        while (true) {
-            if (mainLastModified > 0 && mainLastModified != new Config(main).lastModified()) {
-                merge();
+    public void onload() {
+        new Thread(() -> {
+            while (true) {
+                if (mainLastModified > 0 && mainLastModified != new Config(main).lastModified()) {
+                    merge();
+                }
+                mainLastModified = new Config(main).lastModified();
+
+                if (customLastModified > 0 && customLastModified != new Config(custom).lastModified()) {
+                    merge();
+                }
+                customLastModified = new Config(custom).lastModified();
+
+                try {
+                    TimeUnit.SECONDS.sleep(SLEEP);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             }
-            mainLastModified = new Config(main).lastModified();
-
-            if (customLastModified > 0 && customLastModified != new Config(custom).lastModified()) {
-                merge();
-            }
-            customLastModified = new Config(custom).lastModified();
-
-            TimeUnit.SECONDS.sleep(SLEEP);
-        }
-
+        }).start();
     }
 
     public void merge() {
