@@ -50,7 +50,6 @@ public class AutoUpdater {
         while (it.hasNext()) {
             String r = it.next();
             if (rules.contains(r)) {
-                System.err.println(r);
                 it.remove();
             }
         }

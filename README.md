@@ -32,3 +32,5 @@ clashx:
 mvn clean package
 java -jar ClashX-CustomRules-AutoUpdater-0.0.1-SNAPSHOT.jar
 ```
+如果你开启clashX的通知，监测到文件的变动一般会弹窗提示点击重载，如果没有，可以手动点击重载    
+配置->重载配置文件
