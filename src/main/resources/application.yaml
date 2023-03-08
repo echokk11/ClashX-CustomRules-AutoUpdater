@@ -1,0 +1,3 @@
+clashx:
+  main: YourAutoUpdateFile.yaml
+  custom: myRules.yaml
