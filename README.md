@@ -2,7 +2,7 @@
 
 鉴于Mac版本ClashX每一次自动更新都会覆盖掉原来的配置文件，所以写了一个简单的程序来扫描文件的改动，并且把自定义规则写入到正在用的文件当中去。
 
-
+## 说明
 编写自己的规则到`myRules.yaml`,文件存储在用户目录下如`~/.config/clash/myRules.yaml`    
 内容如下(这是例子):
 ```yaml
@@ -24,4 +24,11 @@ rules:
 clashx:
   main: YourAutoUpdateFile.yaml
   custom: myRules.yaml
+```
+
+## 使用
+修改`application.yaml`中main为自动更新的文件名称，新建文件`myRules.yaml`，编写自定义规则
+```shell
+mvn clean package
+java -jar ClashX-CustomRules-AutoUpdater-0.0.1-SNAPSHOT.jar
 ```
