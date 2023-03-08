@@ -40,7 +40,7 @@ nohup java -jar ClashX-CustomRules-AutoUpdater-0.0.1-SNAPSHOT.jar > /dev/null 2>
 可以做成mac的`自动操作`在电脑启动时候自动启动    
 新建->应用程序->运行shell脚本    
 ```shell
-java -jar ClashX-CustomRules-AutoUpdater-0.0.1-SNAPSHOT.jar
+nohup java -jar ClashX-CustomRules-AutoUpdater-0.0.1-SNAPSHOT.jar > /dev/null 2>&1 &
 ```
 然后加入到mac系统    
 设置->通用->登录项->添加到登录时打开
