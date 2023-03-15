@@ -1,6 +1,6 @@
 # ClashX-CustomRules-AutoUpdater
 
-鉴于Mac版本ClashX每一次自动更新都会覆盖掉原来的配置文件，所以写了一个简单的程序来扫描文件的改动，并且把自定义规则写入到正在用的文件当中去。
+鉴于Mac版本ClashX/ClashX Pro每一次自动更新配置文件都会覆盖掉原来的配置文件，所以写了一个简单的程序来扫描文件的改动，并且把自定义规则写入到更新下来的配置文件当中去。
 
 ## 说明
 编写自己的规则到`myRules.yaml`,文件存储在用户目录下如`~/.config/clash/myRules.yaml`    
