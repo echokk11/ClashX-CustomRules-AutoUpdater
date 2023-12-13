@@ -7,9 +7,10 @@
 内容如下(这是例子):
 ```yaml
 rules:
-    - 'DOMAIN-SUFFIX,rubygem.org,BosLife'
+    - 'DOMAIN-SUFFIX,rubygems.org,BosLife'
     - 'DOMAIN-SUFFIX,github.com,BosLife'
     - 'DOMAIN-SUFFIX,openai.com,BosLife'
+    - 'DOMAIN-SUFFIX,auth0.com,BosLife'
     - 'DOMAIN-SUFFIX,pub.dev,BosLife'
     - 'DOMAIN-SUFFIX,npmjs.org,BosLife'
     - 'DOMAIN-SUFFIX,cloudfront.net,BosLife'
@@ -17,6 +18,20 @@ rules:
     - 'DOMAIN-SUFFIX,apache.org,BosLife'
     - 'DOMAIN-SUFFIX,maven.org,BosLife'
     - 'DOMAIN-SUFFIX,sonatype.com,BosLife'
+    - 'DOMAIN-SUFFIX,brew.sh,BosLife'
+    - 'DOMAIN-SUFFIX,ghcr.io,BosLife'
+    - 'DOMAIN-SUFFIX,hellogithub.com,BosLife'
+    - 'DOMAIN-SUFFIX,ruanyifeng.com,BosLife'
+    - 'DOMAIN-SUFFIX,jetbrains.com,BosLife'
+    - 'DOMAIN-SUFFIX,vultr.com,BosLife'
+    - 'DOMAIN-SUFFIX,itellyou.cn,BosLife'
+    - 'DOMAIN-SUFFIX,proton.me,BosLife'
+    - 'DOMAIN-SUFFIX,amazonaws.com,BosLife'
+    - 'DOMAIN-SUFFIX,amazon.com,BosLife'
+    - 'DOMAIN-SUFFIX,live.com,BosLife'
+    - 'DOMAIN-SUFFIX,bing.com,BosLife'
+    - 'DOMAIN-SUFFIX,sentry.io,BosLife'
+    - 'DOMAIN-SUFFIX,deepl.com,BosLife'
 ```
 
 >文件名称可以在`application.yaml`中修改
