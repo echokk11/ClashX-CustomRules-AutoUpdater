@@ -1,6 +1,7 @@
 package io.echokk11.clashxcustomrulesautoupdater.boot;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.util.StringUtils;
 import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
 
@@ -21,7 +22,11 @@ public class Config {
     private final Map<String, Object> data;
 
     public Config(String configFilename) {
-        this.path = System.getProperty("user.home") + "/.config/clash/" + configFilename;
+        if (StringUtils.startsWithIgnoreCase(configFilename, "/")) {
+            this.path = configFilename;
+        } else {
+            this.path = System.getProperty("user.home") + "/.config/clash/" + configFilename;
+        }
         this.yaml = new Yaml(options);
         try {
             this.data = this.yaml.load(new FileInputStream(this.path));
