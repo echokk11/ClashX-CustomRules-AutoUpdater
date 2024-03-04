@@ -1,4 +1,4 @@
-package io.echokk11.clashxcustomrulesautoupdater.calories;
+package io.echokk11.clashxcustomrulesautoupdater.tools;
 
 import lombok.Data;
 
@@ -33,6 +33,9 @@ public class Calc {
         System.out.printf("每天需要摄入[%d]g碳水，[%d]g蛋白质，[%d]g脂肪%n", c, p, f);
         int per_day_kcal = c * KCAL_CARBOHYDRATE + p * KCAL_PROTEIN + f * KCAL_FAT;
         System.out.printf("每天的热量摄入约为[%d]大卡%n", per_day_kcal);
+
+        int week_c = c * 7;
+//        int high_c = 0.5 * week_c / 2;
     }
 
     public static void main(String[] args) {

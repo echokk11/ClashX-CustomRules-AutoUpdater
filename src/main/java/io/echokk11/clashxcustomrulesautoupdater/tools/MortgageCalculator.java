@@ -1,4 +1,4 @@
-package io.echokk11.clashxcustomrulesautoupdater.calories;
+package io.echokk11.clashxcustomrulesautoupdater.tools;
 
 
 import java.math.BigDecimal;
