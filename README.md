@@ -42,7 +42,7 @@ clashx:
 ```
 
 ## 使用
-修改`application.yaml`中main为自动更新的文件名称，新建文件`myRules.yaml`，编写自定义规则
+修改`application.yaml`中main的value为自动更新(订阅)的文件名称，新建文件`myRules.yaml`，编写自定义规则
 ```shell
 mvn clean package
 java -jar ClashX-CustomRules-AutoUpdater-0.0.1-SNAPSHOT.jar
@@ -50,7 +50,7 @@ java -jar ClashX-CustomRules-AutoUpdater-0.0.1-SNAPSHOT.jar
 nohup java -jar ClashX-CustomRules-AutoUpdater-0.0.1-SNAPSHOT.jar > /dev/null 2>&1 &
 ```
 如果你开启clashX的通知，监测到文件的变动一般会弹窗提示点击重载，如果没有，可以手动点击重载    
-配置->重载配置文件    
+配置->重载配置文件(CMD+R)    
 
 可以做成mac的`自动操作`在电脑启动时候自动启动    
 新建->应用程序->运行shell脚本    
